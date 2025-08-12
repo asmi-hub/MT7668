@@ -34,7 +34,7 @@ cp -f ~/mt7668/drv_wlan/MT7663/wlan/wlan_mt7668_sdio.ko /lib/modules/$(uname -r)
 ##### 更新模块依赖并加载
 ```bash
 depmod -a  
-modprobe wlan_mt76x8_sdio
+modprobe wlan_mt7668_sdio
 ```
 ##### 验证模块加载
 ```bash
