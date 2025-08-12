@@ -19,8 +19,8 @@ ln -sf /usr/local/toolchain/arm-gnu-toolchain-13.3.rel1-aarch64-aarch64-none-elf
 ##### 克隆驱动仓库
 ```bash
 cd /root  
-git clone https://github.com/asmi-hub/MT7668.git  
-cd MT7668
+git clone https://github.com/asmi-hub/mt7668.git  
+cd mt7668
 ```
 ##### 使用指定 Makefile 编译
 ```bash
@@ -28,8 +28,8 @@ make EXTRA_CFLAGS="-w" CROSS_COMPILE= -f Makefile -j$(nproc)
 ```
 ##### 复制固件和驱动模块
 ```bash
-cp ~/MT7668/7668_firmware/* /usr/lib/firmware/  
-cp -f ~/MT7668/drv_wlan/MT7663/wlan/wlan_mt7668_sdio.ko /lib/modules/$(uname -r)/kernel/drivers/net/wireless/
+cp ~/mt7668/7668_firmware/* /usr/lib/firmware/  
+cp -f ~/mt7668/drv_wlan/MT7663/wlan/wlan_mt7668_sdio.ko /lib/modules/$(uname -r)/kernel/drivers/net/wireless/
 ```
 ##### 更新模块依赖并加载
 ```bash
