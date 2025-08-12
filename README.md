@@ -29,7 +29,7 @@ make EXTRA_CFLAGS="-w" CROSS_COMPILE= -f Makefile -j$(nproc)
 ##### 复制固件和驱动模块
 ```bash
 cp ~/MT7668/7668_firmware/* /usr/lib/firmware/  
-cp -f ~/MT7668/drv_wlan/MT6633/wlan/wlan_mt76x8_sdio.ko /lib/modules/$(uname -r)/kernel/drivers/net/wireless/
+cp -f ~/MT7668/drv_wlan/MT7663/wlan/wlan_mt76x8_sdio.ko /lib/modules/$(uname -r)/kernel/drivers/net/wireless/
 ```
 ##### 更新模块依赖并加载
 ```bash
